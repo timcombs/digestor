@@ -10,8 +10,8 @@ const resetBall = () => {
 };
 
 let score = 0;
-let hit = false;
-let resetId = 0;
+hit = false;
+resetId = 0;
 on(slct('#weapon'), 'collide', (e) => {
   const ball = slct('#ball');
   if(e.detail.body.id === ball.body.id && !hit){
