@@ -1,12 +1,14 @@
 let hit = false;
 let resetId = 0;
+
+// recenter ball when it goes off plane or 15 sec elapses
 const resetBall = () => {
   clearTimeout(resetId);
   slct('#ball').body.position.set(0, 0.6, -4);
-  slct('#ball').body.velocity.set(0, 5, 0);
+  slct('#ball').body.velocity.set(0, 15, 0);
   slct('#ball').body.angularVelocity.set(0, 0, 0);
   hit = false;
-  resetId = setTimeout(resetBall, 6000);
+  resetId = setTimeout(resetBall, 15000);
 };
 
 let score = 0;
@@ -19,6 +21,10 @@ on(slct('#weapon'), 'collide', (e) => {
     score = score + 1;
     clearTimeout(resetId);
     resetId = setTimeout(resetBall, 2000);
+
+    // updates score
+    slct('#score').setAttribute('text', 'value', 'SOCRE ' +score);
+
   }
 });
 

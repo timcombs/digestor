@@ -7,12 +7,19 @@
 
   <body>
     <a-scene stats physics="debug: true;">
+
+      <a-assets>
+        <a-asset-item id="milk" src="CesiumMilkTruck.gltf"></a-asset-item>
+        <a-asset-item id="duck" src="duck.gltf"></a-asset-item>
+      </a-assets>
       <a-entity camera look-controls position="0 1.5 0">
         <a-cursor></a-cursor>
 
         <a-entity id="weapon" position="0 0 -3">
           <a-box static-body color="blue" width="0.25" height="0.5" depth="3"></a-box>
         </a-entity>
+
+        <a-text id="score" value="SOCRE" position="-0.2 -0.5 -1" color="blue" width="5" anchor="left"></a-text>
       </a-entity>
 
       <a-entity id="ball" dynamic-body position="0 1 -4"
