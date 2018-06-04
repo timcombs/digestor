@@ -1,0 +1,210 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        1.1677600145339966,
+        1.4536499977111816,
+        0.12432000041007996
+      ],
+      "min": [
+        -1.0894999504089355,
+        -1.2477600574493408,
+        -1.5801600217819214
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 948,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.93382716178894043,
+        0.97386336326599121,
+        0.99187910556793213
+      ],
+      "min": [
+        -0.99517518281936646,
+        -0.9645313024520874,
+        -0.99603289365768433
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 79,
+      "max": [
+        0.92285388708114624,
+        0.99775177240371704,
+        0.98133605718612671,
+        1
+      ],
+      "min": [
+        -0.99981695413589478,
+        -0.9909859299659729,
+        -0.99933809041976929,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 192,
+      "max": [
+        78
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Inuciian (https://sketchfab.com/Inuciian)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/11b33ef796f744eeaee2092bdabb51b6",
+      "title": "Big Rock"
+    },
+    "generator": "Sketchfab-3.18.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 768,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1896,
+      "byteOffset": 768,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1264,
+      "byteOffset": 2664,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 3928,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "rock_1_material",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.31268569829999998,
+          0.25983867049999998,
+          0.26779544350000001,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 1
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "big_rock_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0.96827000000000008,
+        -1.7833300000000001,
+        1.38056,
+        1
+      ],
+      "name": "big_rock"
+    },
+    {
+      "mesh": 0,
+      "name": "big_rock_0"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
